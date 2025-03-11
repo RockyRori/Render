@@ -61,19 +61,17 @@ render-project/
 
 ### **1️⃣ 克隆项目**
 ```bash
-git clone https://github.com/your-repo/render-game-store.git
-cd render-game-store
+
 ```
 
 ### **2️⃣ 运行数据库**
 ```bash
-docker-compose up -d mysql
+
 ```
 
 ### **3️⃣ 初始化数据库**
 ```bash
-mysql -u root -p render < database/schema.sql
-mysql -u root -p render < database/seed.sql
+
 ```
 
 ### **4️⃣ 运行后端（Golang）**
@@ -98,7 +96,7 @@ npm run dev
 
 ### **7️⃣ 使用 Docker 运行全部服务**
 ```bash
-docker-compose up --build
+
 ```
 
 ---
