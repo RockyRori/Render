@@ -1,7 +1,10 @@
+# app/main.py
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from chatbot import chatbot_response
 
 app = Flask(__name__)
+CORS(app)  # 允许所有来源访问
 
 @app.route("/chat", methods=["POST"])
 def chat():
