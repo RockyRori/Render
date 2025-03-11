@@ -1,25 +1,85 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+# General
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+
+# Node.js (for Vue 3)
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vite/
+.vitepress/
+*.local
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+Pipfile.lock
+poetry.lock
+*.pyenv
+.venv/
+env/
+venv/
+db.sqlite3
+
+# Golang
 *.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
+*.test
+vendor/
+*.mod
+*.sum
 go.work
 go.work.sum
+coverage.out
 
-# env file
-.env
+# macOS
+.AppleDouble
+.LSOverride
+Icon?
+.Trashes/
+._*
+
+# Windows
+*.lnk
+desktop.ini
+$RECYCLE.BIN/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Logs & Temp
+logs/
+*.log
+*.temp
+tmp/
+cache/
+*.bak
+*.swp
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Build and deployment
+dist/
+build/
+coverage/
+public/
+storybook-static/
